@@ -16,11 +16,12 @@ int main(int argc, char **argv)
   int a,b;
   
   //CUERPO DEL PROGRAMA
-  printf("\n************MODULO DE LA DIVISION************\n\n");
-  printf("ingresa el dividendo: "); scanf("%d",&a);
+  printf("\n************MODULO DE LA DIVISION************\n");
+  
+  printf("\ningresa el dividendo: "); scanf("%d",&a);
   printf("\ningresa el divisor: "); scanf("%d",&b);
   
-  
+  printf("\nMODULO: %d",residuo(a,b));
   //VALOR DE REGRESO
   return 0;
 }
