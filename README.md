@@ -2,6 +2,7 @@
 Introducción a la programación/Lista de prácticas.
 
 --- Desarrollo de algoritmos ---
+
 1.-Generar el algoritmo que obtenga el residuo o módulo de la división de dos números enteros positivos. Por ejemplo, si se tienen dos números, 39 y 4, el residuo es 3, ya que 4 x 9 = 36 y entonces 39 - 36 = 3.
 
 2.-Generar el algoritmo que indique si al ingresar un número entero positivo, este es par o impar (Ayuda: El algoritmo del ejercicio 1 puede ser útil en esta parte).
