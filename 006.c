@@ -14,20 +14,21 @@
 
 int main()
 {
-    int a=0,b=1,c,n;
+    int a=0,b=1,c=1,n;
     
     printf("*****SERIE DE FIBONACCI*****\n");
     
     printf("\nIngresa el número de elementos a imprimir:");
     scanf("%d",&n);
     
-    for(int i=0;i<n;i++)
+    printf("%d",a);
+    while(n>0)
     {
-        printf("%d,",c);
+        printf(",%d",c);
         c=a+b;
         a=b;
         b=c;
+        n--;
     }
-    
     return 0;
 }
