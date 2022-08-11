@@ -9,7 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include <conio.h>
+#include <conio.h>
 #include <ctype.h>
 #include <stdbool.h>
 
@@ -20,21 +20,25 @@ int main()
   char escala;
   
   while(lp==0)
-  {
-    printf("\n*****CONVERSIÓN DE TEMPERATURA*****\n");
+     {
+     printf("\n*****CONVERSIÓN DE TEMPERATURA*****\n"); 
+  
+     printf("\nElige la escala de temperatura a ingresar (Fahrenheit/Celcius)[F]/[C]"); 
+  
+     scanf("%c",&escala); 
+     escala=toupper(escala); 
+      
+     if(escala=='F' || escala=='C')
+       {
+        lp=1;
+       } 
+     else
+       {
+        getch();
+        system("clear");
+       } 
+     }
 
-    printf("\nElige la escala de temperatura a ingresar (Fahrenheit/Celcius)[F]/[C]");
-
-    scanf("%c",&escala);
-    escala=toupper(escala);
-    
-    if(escala=='F' || escala=='C'){lp=1;}
-    else{system("clear");}
-  }
-  /*
-  getch();
-  printf("\n\n%c",escala);
-  */
   printf("\nIntroduce el valor de la temperatura>>>>");
   scanf("%lf",&temp);
  
