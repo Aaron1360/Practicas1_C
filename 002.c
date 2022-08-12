@@ -12,16 +12,16 @@ int main()
     int numero=0;
     
     printf("******NUMERO PAR/IMPAR******\n");
+    //valor de entrada
     printf("\nIngresa un numero>>>");
     scanf("%d",&numero);
     puts("\n");
     
-    if(numero%2 == 0)  
+    if(numero%2 == 0)  //comprueba que el numero ingresado es par 
     printf("\n>>>El numero es par");
     
     else
-    printf(">>>El numero es impar");
-    //printf("\n\n%d",numero);
+    printf("\n>>>El numero es impar");
     
     return 0;
 }
