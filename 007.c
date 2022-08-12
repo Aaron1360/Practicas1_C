@@ -20,25 +20,24 @@ int main()
   char escala;
   
   while(lp==0)
-     {
-     printf("\n*****CONVERSIÓN DE TEMPERATURA*****\n"); 
+     {
+     printf("\n*****CONVERSIÓN DE TEMPERATURA*****\n"); 
   
-     printf("\nElige la escala de temperatura a ingresar (Fahrenheit/Celcius)[F]/[C]"); 
+     printf("\nElige la escala de temperatura a ingresar (Fahrenheit/Celcius)[F]/[C]"); 
   
-     scanf("%c",&escala); 
-     escala=toupper(escala); 
-      
-     if(escala=='F' || escala=='C')
+     scanf("%c",&escala); 
+     escala=toupper(escala); 
+      
+     if(escala=='F' || escala=='C')
        {
         lp=1;
        } 
-     else
+     else
        {
-        getch();
         system("clear");
        } 
-     }
-
+     }
+     
   printf("\nIntroduce el valor de la temperatura>>>>");
   scanf("%lf",&temp);
  
