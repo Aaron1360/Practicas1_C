@@ -10,21 +10,23 @@
 
 int main()
 {
-    int n=0,temp=0;
+    int n=0,temp=0,i=10;
     
-    printf("*****SUMA*****");
+    printf("*****SUMA*****\n\n");
     //valor de entrada
     printf("Ingresa un numero: ");
     scanf("%d",&n);
+    puts("\n");
     
     //algoritmo
     while(n>0)
     {
-        temp=n%10;//unidades
-        n=(n-temp)/10;//nuevo valor 
+        temp=n%i;//unidades
+        n=(n-temp);//nuevo valor
+        i*=10;//control de cifras
         printf("%d",temp);
         
-        if(n!=0) putchar('+');
+        if(n>0) putchar('+');
     }
     
     return 0;
