@@ -19,6 +19,7 @@ int main()
   double temp=0,f=0,c=0;
   char escala;
   
+  //repite el menu si se ingresa un valor equivocado
   while(lp==0)
      {
      printf("\n*****CONVERSIÓN DE TEMPERATURA*****\n"); 
@@ -27,7 +28,7 @@ int main()
   
      scanf("%c",&escala); 
      escala=toupper(escala); 
-      
+      //condicion de salida
      if(escala=='F' || escala=='C')
        {
         lp=1;
@@ -40,7 +41,7 @@ int main()
      
   printf("\nIntroduce el valor de la temperatura>>>>");
   scanf("%lf",&temp);
- 
+ //menu
   switch(escala)
   {
     case 'F':
