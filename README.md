@@ -21,4 +21,4 @@ Introducción a la programación/Lista de prácticas.
 
 9.-Generar un algoritmo que permita el ingreso de un número entero positivo, y representarlo como la suma de sus unidades, decenas, centenas..., esto es, si se ingresa el valor de 1942 este debe de ser igual a 2 + 40 + 900 + 1000.
 
-10.-Generar un algortimo que permita obtener una cantidad N de números pseudoaleatorios (donde N es un número entero, mayor a 0) utilzando para ello el método/algoritmo de Generación de números congruencial. En el siguiente documento se encuentra información junto con ejemplos para probar el algoritmo.
+10.-Generar un algortimo que permita obtener una cantidad N de números pseudoaleatorios (donde N es un número entero, mayor a 0) utilzando para ello el método/algoritmo de Generación de números congruencial. 
