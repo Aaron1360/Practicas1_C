@@ -16,10 +16,12 @@ int main()
     int n=0,prime=2,cont2=1;
     
     printf("*****NUMEROS PRIMOS*****\n");
+    //valor de entrada
     printf("\nIngresa la cantidad de numeros primos a imprimir: ");
     scanf("%d",&n);
     puts("\n");
-  
+    
+    //llama n veces a la funcion isPrime
     while(cont2<=n)
     {
         if(isPrime(prime)==true) 
@@ -31,7 +33,7 @@ int main()
     }
     return 0;
 }
-
+//funcion que confirma que un numero sea primo
 bool isPrime(int numero)
 {
     int cont1=0;
