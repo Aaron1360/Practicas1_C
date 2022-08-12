@@ -16,6 +16,7 @@ int main()
     int a,b,c;
     
     printf("*****TRIANGULO*****\n");
+    //valores ingresados por el usuario
     printf("\nIngresa el primer valor>>>>");
     scanf("%d",&a);
     printf("\nIngresa el segundo valor>>>>");
@@ -23,14 +24,10 @@ int main()
     printf("\nIngresa el tercer valor>>>>");
     scanf("%d",&c);
     
-    if((a+b)>c && (b+c)>a && (a+c)>b)
-    printf("\nSI ES UN TRIÁNGULO");
+    //comprobar que la suma de las 2 longitudes de las rectas es mayor que la otra
+    if((a+b)>c && (b+c)>a && (a+c)>b) printf("\nSI ES UN TRIÁNGULO");
     
     else printf("NO ES UN TRIÁNGULO");
     
-    
-    
-    
-    //printf("\n>>>%d\n>>>%d\n>>>%d",a,b,c);
     return 0;
 }
