@@ -17,13 +17,14 @@ int main()
     int dividendo, divisor,residuo,mcd;
     
     printf("*****MAXIMO COMÚN DIVISOR*****\n");
-    
+    //entradas del usuario
     printf("Ingresa el valor del dividendo>>>");
     scanf("%d",&dividendo);
     
     printf("Ingresa el valor del divisor>>>");
     scanf("%d",&divisor);
     
+    //algoritmo de euclides
     while(divisor!=0)
     {
         residuo=dividendo%divisor;
@@ -34,6 +35,7 @@ int main()
         
         mcd=dividendo;
     }
+    //resultado
     printf("\n\nMCD = %d",mcd);
     
     return 0;
