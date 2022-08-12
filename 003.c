@@ -11,18 +11,21 @@ int main()
 {
   int num=0;
   printf("\t******AÑO BISIESTO******\n");
+  //valor de entrada
   printf("\tIngresa el año>>> ");
   scanf("%d",&num);
   
+  //comprobar que el valor es multiplo de 4 y no es multiplo de 100
   if(num%4==0 && num%100!=0)
   {
     printf("\n\t>>>ES BISIESTO");
   }
+  //si el valor es multiplo de 100 comprueba que tambien sea multiplo de 400
   else  if(num%4==0 && num%100==0 && num%400==0)
      {
       printf("\n\t>>>ES BISIESTO");
      }
-  
+  //en cualquier otro caso no es un año bisiesto 
   else printf("\n\t>>>NO ES BISIESTO");
   return 0;
 }
