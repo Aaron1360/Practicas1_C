@@ -11,6 +11,31 @@
 
 int main()
 {
+  /*
+  *PARAMETROS
+  *a-Multiplicador
+  *b-Sesgo
+  *m-Módulo
+  *x-Semilla
+  *n-contador(número de elementos)
+  *N-Número de elementos a obtener(entrada del usuario)
+  */
+  float a,b,m,x,n=0;
+  int N;
+  
+  printf("*****GENERADOR DE NUMEROS ALEATORIOS*****\n");
+  printf("\nIngresa los parametros (a),(b) y (m)");
+  printf("\n\nMultiplicador (a)>>> ");
+  scanf("%f",&a);
+  printf("\nSesgo (b)>>> ");
+  scanf("%f",&b);
+  printf("\nMódulo (m)>>> ");
+  scanf("%f",&m);
+  
+  printf("\n\nIngresa el numero de elementos a obtener (N)>>> ");
+  scanf("%f",&N);
+  
+  
   
   return 0;
 }
