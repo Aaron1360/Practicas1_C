@@ -28,7 +28,7 @@ int main()
   float x,u,temp;
   
   printf("*****GENERADOR DE NUMEROS ALEATORIOS*****\n");
-  
+  //INGRESAR VALORES
   printf("\nIngresa los parametros (a),(b) y (m)");
   printf("\n\nMultiplicador (a)>>> ");
   scanf("%d",&a);
@@ -40,20 +40,19 @@ int main()
   scanf("%d",&N);
   printf("\nSemilla (x)>>> ");
   scanf("%f",&x);
-  
+  //MOSTRAR VALORES
   system("clear");
-  
-  printf("VALORES\na=%d\tb=%d\tm=%d\tN=%d\tx=%.2f\n\n");
-  
+  printf("*****GENERADOR DE NUMEROS ALEATORIOS*****\n");
+  printf("VALORES\na=%d\tb=%d\tm=%d\tN=%d\tx=%.2f\n\n",a,b,m,N,x);
+  //GENERACION DE NUMEROS CONGRUENCIAL
   for(n=0;n<N;n++)
   {
-    temp=(a*x)+b;
-    u=x/m;
-    x=fmod(temp,m);
+    temp=(a*x)+b;//VARIABLE TEMPORAL
+    u=x/m;//NUMERO ALEATORIO
+    x=fmod(temp,m);//NUEVO VALOR
     
-    printf("temp=%.2f\nx=%.2f\nu=%.4f\n\n",temp,x,u);
+    printf("\nu%d: %.4f",n,u);//SALIDA
   }
-  
   
   return 0;
 }
