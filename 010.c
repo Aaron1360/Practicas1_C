@@ -22,9 +22,10 @@ int main()
   *n-contador(número de elementos)
   *N-Número de elementos a obtener(entrada del usuario)
   *u-Número aleatorio
+  *temp-temporal
   */
-  int a,b,m,x,n,N;
-  float u;
+  int a,b,m,n,N;
+  float x,u,temp;
   
   printf("*****GENERADOR DE NUMEROS ALEATORIOS*****\n");
   
@@ -38,17 +39,21 @@ int main()
   printf("\nIngresa el numero de elementos a obtener (N)>>> ");
   scanf("%d",&N);
   printf("\nSemilla (x)>>> ");
-  scanf("%d",&x);
+  scanf("%f",&x);
   
   system("clear");
   
-  for(n=0;n<=N;n++)
+  printf("VALORES\na=%d\tb=%d\tm=%d\tN=%d\tx=%.2f\n\n");
+  
+  for(n=0;n<N;n++)
   {
-    x=((a*x)+b)%m;
-    u=(float)x/m;
+    temp=(a*x)+b;
+    u=x/m;
+    x=fmod(temp,m);
     
-    printf("\nU%d: %.2f",n,u);
+    printf("temp=%.2f\nx=%.2f\nu=%.4f\n\n",temp,x,u);
   }
+  
   
   return 0;
 }
