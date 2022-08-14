@@ -8,6 +8,8 @@
 */
 
 #include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
 
 int main()
 {
@@ -19,23 +21,34 @@ int main()
   *x-Semilla
   *n-contador(número de elementos)
   *N-Número de elementos a obtener(entrada del usuario)
+  *u-Número aleatorio
   */
-  float a,b,m,x,n=0;
-  int N;
+  int a,b,m,x,n,N;
+  float u;
   
   printf("*****GENERADOR DE NUMEROS ALEATORIOS*****\n");
+  
   printf("\nIngresa los parametros (a),(b) y (m)");
   printf("\n\nMultiplicador (a)>>> ");
-  scanf("%f",&a);
+  scanf("%d",&a);
   printf("\nSesgo (b)>>> ");
-  scanf("%f",&b);
+  scanf("%d",&b);
   printf("\nMódulo (m)>>> ");
-  scanf("%f",&m);
+  scanf("%d",&m);
+  printf("\nIngresa el numero de elementos a obtener (N)>>> ");
+  scanf("%d",&N);
+  printf("\nSemilla (x)>>> ");
+  scanf("%d",&x);
   
-  printf("\n\nIngresa el numero de elementos a obtener (N)>>> ");
-  scanf("%f",&N);
+  system("clear");
   
-  
+  for(n=0;n<=N;n++)
+  {
+    x=((a*x)+b)%m;
+    u=(float)x/m;
+    
+    printf("\nU%d: %.2f",n,u);
+  }
   
   return 0;
 }
