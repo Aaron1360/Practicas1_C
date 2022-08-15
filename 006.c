@@ -24,7 +24,7 @@ int main()
     printf("%d",a);
     
     //algoritmo
-    while(n>0)
+    while(n>1)
     {
         printf(",%d",c);
         c=a+b;//siguiente valor de la serie 
